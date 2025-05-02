@@ -10,5 +10,14 @@ public class Main {
         System.out.println(ArrayResizer.isNonZeroRow(arr, 1));
         System.out.println(ArrayResizer.isNonZeroRow(arr,2));
         System.out.println(ArrayResizer.isNonZeroRow(arr,3));
+
+        System.out.println(ArrayResizer.numNonZeroRows(arr));
+        int[][] resized = ArrayResizer.resize(arr);
+        for (int i = 0; i < resized.length; i ++) {
+            for (int j = 0; j < resized[0].length; j++) {
+                System.out.print(resized[i][j] + ",");
+            }
+            System.out.println();
+        }
     }
 }
